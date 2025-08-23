@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author mdcin
  */
-public class PruebaViewController extends Controller implements Initializable {
+public class LoginViewController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -22,8 +22,5 @@ public class PruebaViewController extends Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    
-    
     
 }

@@ -27,4 +27,6 @@ public class CopiaLibro {
     private Rack rack;
 
     // Getters y setters
+    
+    
 }

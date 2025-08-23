@@ -1,8 +1,9 @@
-com\mycompany\bibliotecapoo1\controller\PruebaViewController.class
 com\mycompany\bibliotecapoo1\controller\Controller.class
 com\mycompany\bibliotecapoo1\util\Conexion.class
 com\mycompany\bibliotecapoo1\model\Libro_.class
+com\mycompany\bibliotecapoo1\controller\LibroController.class
 com\mycompany\bibliotecapoo1\model\CategoriaLibro.class
+com\mycompany\bibliotecapoo1\service\LibroServicio.class
 com\mycompany\bibliotecapoo1\repository\Repositorio.class
 com\mycompany\bibliotecapoo1\model\TipoCopia.class
 com\mycompany\bibliotecapoo1\model\Bibliotecario_.class
@@ -11,6 +12,7 @@ com\mycompany\bibliotecapoo1\model\CopiaLibro_.class
 com\mycompany\bibliotecapoo1\App.class
 com\mycompany\bibliotecapoo1\model\EstadoCopia.class
 com\mycompany\bibliotecapoo1\model\Miembro.class
+com\mycompany\bibliotecapoo1\service\Enrutador.class
 com\mycompany\bibliotecapoo1\model\CopiaLibro.class
 com\mycompany\bibliotecapoo1\model\EstadoMiembro.class
 com\mycompany\bibliotecapoo1\model\Usuario.class
@@ -21,3 +23,5 @@ com\mycompany\bibliotecapoo1\model\Bibliotecario.class
 com\mycompany\bibliotecapoo1\model\Prestamo.class
 com\mycompany\bibliotecapoo1\model\Usuario_.class
 com\mycompany\bibliotecapoo1\model\Rack.class
+com\mycompany\bibliotecapoo1\controller\Navegacion.class
+com\mycompany\bibliotecapoo1\controller\LoginViewController.class

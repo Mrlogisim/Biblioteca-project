@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.bibliotecapoo1.controller.LibroController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="662.0" style="-fx-background-color: grey;">
+         <left>
+            <VBox prefHeight="400.0" prefWidth="187.0" spacing="5.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Biblioteca" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button minWidth="187.0" mnemonicParsing="false" prefHeight="40.0" text="Bibliotecarios" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="-6.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button minWidth="187.0" mnemonicParsing="false" prefHeight="40.0" text="Usuarios">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button minWidth="187.0" mnemonicParsing="false" prefHeight="40.0" text="Prestamos">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button minWidth="187.0" mnemonicParsing="false" prefHeight="40.0" text="Libros">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e5f4f4;" BorderPane.alignment="CENTER">
+               <children>
+                  <TabPane prefHeight="400.0" prefWidth="474.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Libros">
+                           <content>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </content>
+                           <content>
+                              <AnchorPane prefHeight="171.0" prefWidth="457.0">
+                                 <children>
+                                    <GridPane layoutX="22.0" layoutY="6.0" prefHeight="109.0" prefWidth="157.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="72.33333333333334" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.66669464111328" minWidth="10.0" prefWidth="83.66666666666666" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="33.99998982747396" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="26.66667683919271" minHeight="0.0" prefHeight="26.66667683919271" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Titulo:" />
+                                          <Label text="Autor:" GridPane.rowIndex="1" />
+                                          <Label text="Editorial:" GridPane.rowIndex="2" />
+                                          <TextField fx:id="txtEditorial" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField fx:id="txtAutor" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="txtTitulo" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane layoutX="205.0" layoutY="6.0" prefHeight="109.0" prefWidth="157.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="72.33333333333334" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.66669464111328" minWidth="10.0" prefWidth="83.66666666666666" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="33.99998982747396" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="26.66667683919271" minHeight="0.0" prefHeight="26.66667683919271" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="ISBN:" />
+                                          <Label text="Idioma:" GridPane.rowIndex="1" />
+                                          <Label text="Categoria:" GridPane.rowIndex="2" />
+                                          <TextField fx:id="txtIdioma" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="txtISBN" GridPane.columnIndex="1" />
+                                          <ComboBox fx:id="cmbCategoria" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                    </GridPane>
+                                    <TableView fx:id="tablaLibros" layoutX="8.0" layoutY="157.0" prefHeight="207.0" prefWidth="459.0" AnchorPane.topAnchor="157.0">
+                                      <columns>
+                                        <TableColumn fx:id="colId" prefWidth="75.0" text="id" />
+                                        <TableColumn fx:id="colTitulo" prefWidth="75.0" text="Titulo" />
+                                          <TableColumn fx:id="colAutor" prefWidth="75.0" text="Autor" />
+                                          <TableColumn fx:id="colEditorial" prefWidth="75.0" text="Editorial" />
+                                          <TableColumn fx:id="colISBN" prefWidth="75.0" text="ISBN" />
+                                          <TableColumn fx:id="colIdioma" prefWidth="75.0" text="Idioma" />
+                                          <TableColumn fx:id="colCategoria" prefWidth="75.0" text="Categoria" />
+                                      </columns>
+                                    </TableView>
+                                    <Button fx:id="btnAñadir" layoutX="386.0" layoutY="125.0" mnemonicParsing="false" onAction="#agregarLibro" prefHeight="25.0" prefWidth="82.0" text="Añadir" />
+                                    <Button fx:id="btnModificar" layoutX="200.0" layoutY="125.0" mnemonicParsing="false" onAction="#modificarLibro" prefHeight="25.0" prefWidth="81.0" text="Modificar" />
+                                    <Button fx:id="btnEliminar" layoutX="7.0" layoutY="125.0" mnemonicParsing="false" onAction="#eliminarLibro" prefHeight="25.0" prefWidth="81.0" text="Eliminar" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                      <Tab text="Copias">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane layoutX="24.0" layoutY="30.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Libro:" />
+                                          <Label text="Rack:" GridPane.rowIndex="1" />
+                                          <Label text="Tipo:" GridPane.rowIndex="2" />
+                                          <ComboBox prefWidth="150.0" GridPane.columnIndex="1" />
+                                          <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                    </GridPane>
+                                    <TableView layoutX="14.0" layoutY="157.0" prefHeight="200.0" prefWidth="447.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="idCopia" />
+                                        <TableColumn prefWidth="75.0" text="Libro" />
+                                          <TableColumn prefWidth="75.0" text="Tipo" />
+                                          <TableColumn prefWidth="75.0" text="Rack" />
+                                          <TableColumn prefWidth="75.0" text="Estado" />
+                                          <TableColumn prefWidth="75.0" text="Estado" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content></Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

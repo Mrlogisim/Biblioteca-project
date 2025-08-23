@@ -1,6 +1,8 @@
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\App.java
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\controller\Controller.java
-C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\controller\PruebaViewController.java
+C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\controller\LibroController.java
+C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\controller\LoginViewController.java
+C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\controller\Navegacion.java
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\model\Bibliotecario.java
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\model\CategoriaLibro.java
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\model\CopiaLibro.java
@@ -13,4 +15,6 @@ C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycom
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\model\TipoCopia.java
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\model\Usuario.java
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\repository\Repositorio.java
+C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\service\Enrutador.java
+C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\service\LibroServicio.java
 C:\Users\mdcin\Documents\NetBeansProjects\BibliotecaPOO1\src\main\java\com\mycompany\bibliotecapoo1\util\Conexion.java

@@ -6,10 +6,21 @@ package com.mycompany.bibliotecapoo1.model;
 
 
 public enum CategoriaLibro {
-    FICCION,
-    NO_FICCION,
-    CIENCIA,
-    HISTORIA,
-    TECNOLOGIA
+    FICCION("Ficción"),
+    NO_FICCION("No Ficción"),
+    CIENCIA("Ciencia"),
+    HISTORIA("Historia"),
+    TECNOLOGIA("Tecnologia");
+
+    private final String label;
+
+    CategoriaLibro(String label) {
+        this.label = label;
+    }
+
+    @Override
+    public String toString() {
+        return label;
+    }
 }
 

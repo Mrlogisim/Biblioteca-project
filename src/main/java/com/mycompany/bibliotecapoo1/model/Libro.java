@@ -40,22 +40,19 @@ public class Libro {
 
     @OneToMany(mappedBy = "libro")
     private List<CopiaLibro> copias;
-
     
     
     // Constructores
     public Libro() {
     }
 
-    public Libro(int id, String titulo, String autor, String editorial, String isbn, String idioma, CategoriaLibro categoria, List<CopiaLibro> copias) {
-        this.id = id;
+    public Libro(String titulo, String autor, String editorial, String isbn, String idioma, CategoriaLibro categoria) {
         this.titulo = titulo;
         this.autor = autor;
         this.editorial = editorial;
         this.isbn = isbn;
         this.idioma = idioma;
         this.categoria = categoria;
-        this.copias = copias;
     }
   
     
@@ -129,18 +126,7 @@ public class Libro {
     public void setCopias(List<CopiaLibro> copias) {
         this.copias = copias;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
 }
 
