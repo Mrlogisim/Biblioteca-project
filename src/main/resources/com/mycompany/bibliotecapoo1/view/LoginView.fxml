@@ -17,11 +17,17 @@
             <Image url="@../images/library-icon.png" />
         </ImageView>
         
-        <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Sistema de Gestión de Biblioteca">
+           <Label prefWidth="369.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Sistema de Gestión de Biblioteca">
             <padding>
                 <Insets bottom="30" />
             </padding>
         </Label>
+        
+        <Button defaultButton="true" onAction="#handleLogin" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20;" text="Iniciar Sesión">
+            <padding>
+                <Insets top="20" />
+            </padding>
+        </Button>
         
         <GridPane hgap="10" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 5;" vgap="10">
             <columnConstraints>
@@ -40,12 +46,6 @@
             <Label style="-fx-font-weight: bold;" text="Clave:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
             <PasswordField fx:id="passwordField" promptText="Ingrese su clave" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         </GridPane>
-        
-        <Button defaultButton="true" onAction="#handleLogin" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20;" text="Iniciar Sesión">
-            <padding>
-                <Insets top="20" />
-            </padding>
-        </Button>
         
         <Label style="-fx-text-fill: #7f8c8d; -fx-font-size: 10px;" text="© 2025 Sistema de Biblioteca - POO">
             <padding>

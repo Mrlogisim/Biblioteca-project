@@ -14,11 +14,40 @@ public class Rack {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String descripcion;
+    @Column(name = "descripción")
+    private String ubicacion;
 
     @OneToMany(mappedBy = "rack")
     private List<CopiaLibro> copias;
 
     // Getters y setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+
+    public List<CopiaLibro> getCopias() {
+        return copias;
+    }
+
+    public void setCopias(List<CopiaLibro> copias) {
+        this.copias = copias;
+    }
+    
+    
+    
 }
 

@@ -14,9 +14,11 @@ public class Prestamo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "fecha de Inicio")
     private LocalDate fechaInicio;
+    
+    @Column(name = "Fecha de devolución")
     private LocalDate fechaVencimiento;
-    private LocalDate fechaDevolucion;
 
     @ManyToOne
     private CopiaLibro copia;
@@ -26,7 +28,12 @@ public class Prestamo {
 
     // Métodos de negocio (opcionalmente implementables luego)
     public boolean estaVencido() {
-        return fechaDevolucion == null && fechaVencimiento.isBefore(LocalDate.now());
+        if (fechaVencimiento == null) {
+            return false; // Si no hay fecha de vencimiento, no está vencido
+        }
+        
+        LocalDate hoy = LocalDate.now();
+        return hoy.isAfter(fechaVencimiento);
     }
 
     public long diasDeRetraso() {
@@ -39,9 +46,50 @@ public class Prestamo {
     }
 
     // Getters y setters
-    public LocalDate getFechaDevolucion() {
-        return fechaDevolucion;
+
+    public int getId() {
+        return id;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public LocalDate getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public LocalDate getFechaVencimiento() {
+        return fechaVencimiento;
+    }
+
+    public void setFechaVencimiento(LocalDate fechaVencimiento) {
+        this.fechaVencimiento = fechaVencimiento;
+    }
+
+    public CopiaLibro getCopia() {
+        return copia;
+    }
+
+    public void setCopia(CopiaLibro copia) {
+        this.copia = copia;
+    }
+
+    public Miembro getMiembro() {
+        return miembro;
+    }
+
+    public void setMiembro(Miembro miembro) {
+        this.miembro = miembro;
+    }
+    
+    
+    
+    
     
 }
 

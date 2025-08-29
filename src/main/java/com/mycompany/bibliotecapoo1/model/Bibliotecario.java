@@ -5,9 +5,13 @@
 package com.mycompany.bibliotecapoo1.model;
 
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "bibliotecario")
+@DiscriminatorValue("BIBLIOTECARIO")
 public class Bibliotecario extends Miembro {
     // Métodos podrían ser implementados como funciones dentro de servicios
 }

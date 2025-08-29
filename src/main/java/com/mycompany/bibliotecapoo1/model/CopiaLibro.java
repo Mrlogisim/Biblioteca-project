@@ -27,6 +27,54 @@ public class CopiaLibro {
     private Rack rack;
 
     // Getters y setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public TipoCopia getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoCopia tipo) {
+        this.tipo = tipo;
+    }
+
+    public EstadoCopia getEstado() {
+        return estado;
+    }
+
+    public void setEstado(EstadoCopia estado) {
+        this.estado = estado;
+    }
+
+    public boolean isEsDeReferencia() {
+        return esDeReferencia;
+    }
+
+    public void setEsDeReferencia(boolean esDeReferencia) {
+        this.esDeReferencia = esDeReferencia;
+    }
+
+    public Libro getLibro() {
+        return libro;
+    }
+
+    public void setLibro(Libro libro) {
+        this.libro = libro;
+    }
+
+    public Rack getRack() {
+        return rack;
+    }
+
+    public void setRack(Rack rack) {
+        this.rack = rack;
+    }
     
     
 }

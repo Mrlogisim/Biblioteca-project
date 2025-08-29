@@ -42,4 +42,10 @@ public class LibroServicio {
         repositorio.confirmarTransaccion();
     }
 
+    // ✅ NUEVO: Obtener libro por ID
+    public Libro obtenerLibroPorId(int id) {
+        return repositorio.obtenerPorId(Libro.class, id);
+    }
+    
+    
 }

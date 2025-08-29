@@ -9,11 +9,11 @@ import javax.annotation.processing.Generated;
 @StaticMetamodel(Rack.class)
 public abstract class Rack_ {
 
-	public static volatile SingularAttribute<Rack, String> descripcion;
+	public static volatile SingularAttribute<Rack, String> ubicacion;
 	public static volatile ListAttribute<Rack, CopiaLibro> copias;
 	public static volatile SingularAttribute<Rack, Integer> id;
 
-	public static final String DESCRIPCION = "descripcion";
+	public static final String UBICACION = "ubicacion";
 	public static final String COPIAS = "copias";
 	public static final String ID = "id";
 

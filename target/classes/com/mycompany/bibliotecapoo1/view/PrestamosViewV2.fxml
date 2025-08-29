@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.bibliotecapoo1.controller.PrestamoController">
+
+    <children>
+        <VBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+            <children>
+
+                <!-- Formulario de préstamo -->
+                <GridPane hgap="10" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints minWidth="100"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+
+                    <rowConstraints>
+                        <RowConstraints minHeight="30"/>
+                        <RowConstraints minHeight="30"/>
+                        <RowConstraints minHeight="30"/>
+                        <RowConstraints minHeight="30"/>
+                    </rowConstraints>
+
+                    <children>
+                        <Label text="Miembro:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="cmbMiembro" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Copia de Libro:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="cmbCopiaLibro" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Fecha Préstamo:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <DatePicker fx:id="dpFechaPrestamo" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Fecha Vencimiento:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <DatePicker fx:id="dpFechaVencimiento" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                    </children>
+                </GridPane>
+
+                <!-- Botones -->
+                <HBox spacing="10" alignment="CENTER">
+                    <Button text="Añadir" onAction="#anadirPrestamo"/>
+                    <Button text="Modificar" onAction="#modificarPrestamo"/>
+                    <Button text="Eliminar" onAction="#eliminarPrestamo"/>
+                    <Button text="Limpiar" onAction="#limpiarFormulario"/>
+                </HBox>
+
+                <!-- Tabla de préstamos -->
+                <TableView fx:id="tablaPrestamos" prefHeight="300">
+                    <columns>
+                        <TableColumn fx:id="colIdPrestamo" text="ID" prefWidth="60"/>
+                        <TableColumn fx:id="colMiembro" text="Miembro" prefWidth="150"/>
+                        <TableColumn fx:id="colCopia" text="Copia de Libro" prefWidth="150"/>
+                        <TableColumn fx:id="colFechaPrestamo" text="Fecha Préstamo" prefWidth="120"/>
+                        <TableColumn fx:id="colFechaVencimiento" text="Fecha Vencimiento" prefWidth="120"/>
+                        <TableColumn fx:id="colEstado" text="Estado" prefWidth="100"/>
+                    </columns>
+                </TableView>
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -6,6 +6,7 @@ package com.mycompany.bibliotecapoo1.repository;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Order;
@@ -71,6 +72,24 @@ public class Repositorio {
         return em.createQuery(cq).getResultList();
     }
 
+    
+    
+     public <T> T buscarPorClave(Class<T> clase, String clave) {
+        try {
+            TypedQuery<T> query = em.createQuery(
+                "SELECT m FROM " + clase.getSimpleName() + " m WHERE m.clave = :clave", 
+                clase
+            );
+            query.setParameter("clave", clave);
+
+            return query.getSingleResult();
+        } catch (Exception e) {
+            return null; // Retorna null si no encuentra resultados
+        }
+    }
+    
+    
+    
     public <T, P> List<T> obtenerTodosOrdenadosPor(Class<T> clase, SingularAttribute<T, P> atributo) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<T> cq = cb.createQuery(clase);

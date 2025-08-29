@@ -19,6 +19,7 @@ public class App extends Application {
 public void start(Stage stage) throws IOException {
     scene = new Scene(loadFXML("/com/mycompany/bibliotecapoo1/view/LibroView")); 
     stage.setScene(scene);
+    // stage.setMaximized(true); // ← Esto maximiza la ventana al iniciar
     stage.setTitle("Gestión Biblioteca");
     stage.show();
 }

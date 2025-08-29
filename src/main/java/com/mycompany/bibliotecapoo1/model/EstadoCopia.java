@@ -7,6 +7,7 @@ package com.mycompany.bibliotecapoo1.model;
 public enum EstadoCopia {
     DISPONIBLE,
     PRESTADA,
-    PERDIDA
+    PERDIDA,
+    NO_DISPONIBLE
 }
 
